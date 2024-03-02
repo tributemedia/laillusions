@@ -1,0 +1,113 @@
+.blogContact{
+	padding: 180px 0;
+	.w50{
+		.contact__title,.contact__text{
+			display: none;
+		}
+	}
+	.contact{
+		.contact__title,.contact__text{
+			display: block;
+		}
+		&__title{
+			font-weight: 700;
+			font-size: 58px;
+			line-height: 110%;
+			letter-spacing: 0.02em;
+			text-transform: capitalize;
+			color: #8A18AB;
+			padding-bottom: 28px;
+		}
+		&__text{
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			letter-spacing: 0.02em;
+			color: #1E1738;
+			padding-bottom: 38px;
+		}
+		&__info{
+			padding-bottom: 30px;
+			&_icon{
+				max-width: 45px;
+				width: 100%;
+				height: 45px;
+				border-radius: 50%;
+				background: #8A18AB;
+				margin-right: 40px;
+			}
+			&_text{
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 110%;
+				letter-spacing: 0.02em;
+				color: #1E1738;
+				max-width: 300px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.blogContact{
+		padding: 60px 0;
+		.w50{
+			width: 55%;
+		}
+		.contact{
+			width: 42%;
+			&__title{
+				font-size: 44px;
+				padding-bottom: 20px;
+			}
+			&__text{
+				font-size: 14px;
+				padding-bottom: 24px;
+			}
+			&__info{
+				padding-bottom: 30px;
+				&_icon{
+					margin-right: 15px;
+				}
+				&_text{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.blogContact{
+		.w50{
+			.contact__title,.contact__text{
+				display: block;
+			}
+		}
+		padding: 60px 0;
+		.container{
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+		}
+		.w50{
+			width: 100%;
+		}
+		.contact{
+			.contact__title,.contact__text{
+				display: none;
+			}
+			width: 100%;
+			&__title{
+				font-size: 32px;
+			}
+			&__info{
+				padding-bottom: 0;
+				padding-top: 30px;
+				&_icon{
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

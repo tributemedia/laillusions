@@ -1,0 +1,277 @@
+.ticketsScreen{
+	background: linear-gradient(93.78deg, #4D009A 3.68%, #8201B6 98.45%);
+	//background-size: 129%;
+	position: relative;
+	
+	&:after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		opacity: 0.5;
+		z-index: 0;
+		background: #fff url('../../public/assets/2-min.png');
+		//background-position-y: -520px;
+		background-size: 150%;
+	}
+	.container{
+		position: relative;
+		z-index: 3;
+	}
+	
+	padding: 170px 0 170px;
+	&__title{
+		font-weight: 900;
+		font-size: 120px;
+		line-height: 115%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: rgba(201, 132, 255, 1);
+		transform: rotate(-90deg);
+		position: absolute;
+		left: -230px;
+		top: 230px;
+	}
+	&__city{
+		font-weight: 900;
+		font-size: 55px;
+		line-height: 80%;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: rgba(201, 132, 255, 1);
+		padding-bottom: 24px;
+	}
+	&__box{
+		position: relative;
+		max-width: 920px;
+		width: 100%;
+		margin: 0 auto;
+		background: #fff;
+		box-shadow: 0 25px 35px 7px rgba(0, 0, 0, 0.2);
+		border-radius: 40px;
+		padding: 50px 65px 30px;
+		//background-size: 129%;
+		//background: #fff url('../../public/assets/pngegg(1).png');
+	}
+	.buttonPurple{
+		max-width: 360px;
+		width: 100%;
+		margin: 0 auto;
+		cursor: pointer;
+		&:disabled {
+			background: #181023;
+		}
+	}
+	&__item{
+		padding: 15px 2px;
+		border-bottom: 3px solid #F3F3F3;
+		justify-content: space-between;
+		align-items: center;
+		&:last-child{
+			border-bottom: none;
+		}
+		&_info{
+			max-width: 475px;
+			width: 100%;
+			&-name{
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 100%;
+				padding-bottom: 12px;
+				letter-spacing: 0.02em;
+				color: #1E1738;
+			}
+			&-text{
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 120%;
+				letter-spacing: 0.02em;
+				color: #1E1738;
+			}
+		}
+		&_add{
+			padding: 5px 5px;
+			min-width: 110px;
+			&-text{
+				font-weight: 500;
+				font-size: 10px;
+				line-height: 110%;
+				letter-spacing: 0;
+				color: #1E1738;
+			}
+		}
+		&_price{
+			//width: 70px;
+			//padding: 0 10px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			//display: flex;
+			//align-items: center;
+			//flex-direction: column;
+			//justify-content: center;
+			&-coin{
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 100%;
+				letter-spacing: 0.02em;
+				color: #8A18AB;
+			}
+			&-full{
+				//padding-top: 16px;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 150%;
+				letter-spacing: 0.02em;
+				text-decoration-line: line-through;
+				color: #000000;
+			}
+		}
+		&_count{
+
+		}
+		.count{
+			width: 180px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: #F3F3F3;
+			border-radius: 40px;
+			.buttonPurple{
+				margin: 0;
+				padding: 20px;
+				border-radius: 40px;
+				width: 60px;
+				height: 60px;
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 150%;
+				text-align: center;
+				letter-spacing: 0.02em;
+				text-transform: capitalize;
+				color: #FFFFFF;
+			}
+			&__input{
+				width: 50px;
+				background: transparent;
+				text-align: center;
+				outline: none;
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 150%;
+				letter-spacing: 0.02em;
+				text-transform: capitalize;
+				color: #000000;
+			}
+		}
+	}
+	
+	.boxButtonPurple{
+		width: 100%;
+		padding: 20px;
+		background-color: #ffffff;
+		border-top: 3px solid #F3F3F3;
+		&.false{
+			position: sticky;
+			left: 0;
+			bottom: 0;
+		}
+	}
+}
+
+
+@media screen and (min-width: 767px) {
+	.ticketsScreen {
+		//background: linear-gradient(93.78deg, #4D009A 3.68%, #8201B6 98.45%);
+		padding: 170px 0 170px;
+		&:after{
+			background-size: contain;
+		}
+	}
+}
+@media screen and (max-width: 1100px) {
+	.ticketsScreen {
+		&__title{
+			font-weight: 900;
+			font-size: 50px;
+			line-height: 80%;
+			text-align: center;
+			transform: inherit;
+			position: relative;
+			left: inherit;
+			top: inherit;
+		}
+		&__box{
+			padding: 40px 55px 20px;
+		}
+		&__item {
+			&_info {
+				&-name {
+
+				}
+				&-text {
+					font-size: 12px;
+					line-height: 120%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.ticketsScreen {
+		padding: 90px 0 100px;
+		&__box{
+			padding: 28px 18px 8px;
+		}
+		&__city{
+			font-size: 40px;
+		}
+		
+		&__item {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			&_info {
+				max-width: 100%;
+				&-text {
+					font-size: 12px;
+					line-height: 140%;
+					padding-bottom: 16px;
+					font-weight: 400;
+				}
+			}
+			
+			&_price {
+				width: 50%;
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				padding: 0;
+				&-full{
+					padding-top: 0;
+				}
+			}
+			.count {
+				width: 120px;
+				height: 40px;
+				.buttonPurple{
+					padding: 10px;
+					width: 40px;
+					height: 40px;
+					font-size: 22px;
+					line-height: 100%;
+				}
+				&__input{
+					width: 40px;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 120%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.policy{
+	&__top {
+		background: linear-gradient(93.78deg, #4D009A 3.68%, #8201B6 98.45%);
+		padding: 190px 0 55px;
+		&_title {
+			font-weight: 700;
+			font-size: 58px;
+			line-height: 110%;
+			text-align: center;
+			letter-spacing: 0.02em;
+			text-transform: capitalize;
+			color: #FFFFFF;
+		}
+	}
+	&__content{
+		padding-top: 60px;
+		padding-bottom: 150px;
+		p{
+			padding: 10px 0;
+			
+		}
+		h3{
+			font-size: 22px;
+			line-height: 24px;
+			padding-bottom: 10px;
+			padding-top: 20px;
+			font-weight: bold;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.policy {
+		&__top {
+			&_title {
+				font-size: 40px;
+			}
+		}
+		&__content{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			p{
+				padding: 8px 0;
+				font-size: 14px;
+			}
+		}
+	}
+}

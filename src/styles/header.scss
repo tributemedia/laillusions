@@ -1,0 +1,141 @@
+.header {
+	height: 110px;
+	&__menu{
+		&_link{
+			font-weight: 700;
+			font-size: 22px;
+			letter-spacing: 0.02em;
+			line-height: 22px;
+			img{
+				margin-left: 12px;
+			}
+		}
+		&_open{
+			min-width: 257px;
+			border-radius: 40px 0 40px 40px;
+			padding: 14px 26px;
+			a{
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 36px;
+				letter-spacing: 0.02em;
+				white-space: nowrap;
+			}
+		}
+	}
+	&.scroll{
+		background: linear-gradient(93.78deg, #4D009A 3.68%, #8201B6 98.45%);
+		box-shadow: 0 15px 25px 4px rgba(0, 0, 0, 0.2);
+	}
+	&.true{
+		background: linear-gradient(93.78deg, #4D009A 3.68%, #8201B6 98.45%);
+	}
+	&__openMenu{
+		height: 24px;
+		width: 32px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		span{
+			height: 3px;
+			width: 100%;
+			border-radius: 3px;
+			background-color: #fff;
+			&:first-child{
+				width: 50%;
+			}
+			&:last-child{
+				width: 70%;
+			}
+		}
+		&.close{
+			span{
+				background-color: #FFD914;
+			}
+		}
+	}
+	&__mobile{
+		background: linear-gradient(93.78deg, #4D009A 3.68%, #8201B6 98.45%);
+		padding-top: 20px;
+		.container{
+			min-height: 100%;
+			height: 100%;
+		}
+		.BixSocial{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&_links{
+			display: flex;
+			flex-direction: column;
+			margin-top: 100px;
+			margin-bottom: 60px;
+			.header__menu_link{
+				font-style: normal;
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 100%;
+				letter-spacing: 0.02em;
+				color: #FFFFFF;
+				margin-bottom: 14px;
+				margin-top: 14px;
+				gap: 10px;
+				width: 100%;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&[aria-expanded="true"] {
+					color: #FFD914;
+					svg{
+						transform: rotate(180deg);
+						path {
+							fill: #FFD914;
+							stroke: #FFD914;
+						}
+					}
+				}
+				&-open{
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 200%;
+					letter-spacing: 0.02em;
+					color: #FFFFFF;
+					text-align: center;
+				}
+			}
+		}
+		&_ticket{
+			//font-style: normal;
+			//font-weight: 700;
+			font-size: 22px;
+			//line-height: 100%;
+			letter-spacing: 0.02em;
+			color: #FF00B8;
+			//display: inline-block;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.header {
+		height: 90px;
+		&__menu{
+			&_link{
+				font-size: 18px;
+				line-height: 18px;
+				img{
+					margin-left: 8px;
+				}
+			}
+			
+		}
+		.buttonYellow{
+			height: 50px;
+			font-size: 18px;
+		}
+	}
+}

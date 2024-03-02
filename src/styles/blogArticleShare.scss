@@ -1,0 +1,40 @@
+.BlogArticleShare{
+	background: #F3F3F3;
+	padding: 40px;
+	.container {
+		padding: 0;
+	}
+	&__name{
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 110%;
+		text-align: center;
+		letter-spacing: 0.02em;
+		text-transform: capitalize;
+		color: #181023;
+		padding-bottom: 20px;
+	}
+	&__links{
+		gap: 12px;
+		&_Facebook{
+			&:hover{
+				cursor: pointer;
+				svg{
+					path{
+						fill: #5363B9;
+					}
+				}
+			}
+		}
+		&_Twitter{
+			&:hover{
+				cursor: pointer;
+				svg{
+					path{
+						fill: #56B7ED;
+					}
+				}
+			}
+		}
+	}
+}

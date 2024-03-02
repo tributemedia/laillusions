@@ -1,0 +1,157 @@
+.blockBlogs{
+	position: relative;
+	overflow: hidden;
+	padding: 90px 0;
+	.container{
+		padding-bottom: 90px;
+	}
+	.slick-track{
+		//gap: 16px;
+		display: flex;
+		.slick-slide{
+			padding: 0 16px;
+		}
+	}
+	
+	&__name{
+		font-weight: 700;
+		font-size: 58px;
+		line-height: 110%;
+		letter-spacing: 0.02em;
+		color: #FFFFFF;
+		padding-bottom: 14px;
+		&_link{
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 100%;
+			margin-left: 21px;
+			&:hover{
+				color: #FFD914;
+			}
+		}
+	}
+	&__bg{
+		width: 100%;
+		height: 100%;
+	}
+	&__items{
+		@media screen and (min-width: 1025px) {
+			margin-left: -16px;
+			margin-right: -16px;
+		}
+	}
+	&__item{
+		position: relative;
+		height: 250px;
+		
+		@media screen and (max-width: 1024px) {
+			height: 250px;
+		}
+		@media screen and (max-width: 767px) {
+			height: 300px;
+		}
+		@media screen and (max-width: 420px) {
+			height: 230px;
+		}
+		&_info{
+			&-read{
+				font-size: 14px;
+			}
+			&-theme{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				span{
+					font-weight: bold;
+				}
+			}
+			&-name{
+				font-weight: bold;
+				padding-top: 14px;
+				display: block;
+				color: white;
+				text-align: center;
+			}
+		}
+		&_bg{
+			width: 100%;
+			height: 100%;
+			border-radius: 40px;
+			overflow: hidden;
+			img{
+				object-fit: fill;
+			}
+		}
+		&_info{
+			z-index: 3;
+			padding: 20px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			color: #fff;
+			
+		}
+		&:hover{
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: rgba(0,0,0,0.3);
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+				border-radius: 40px;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	
+	.blockBlogs{
+		.container{
+			padding-bottom: 0;
+		}
+		.slick-track{
+			.slick-slide{
+				padding: 0 10px;
+			}
+		}
+		.slick-next {
+			width: 60px;
+			height: 60px;
+			background: rgba(201, 132, 255, 0.5);
+			border-radius: 40px;
+			display: flex!important;
+			text-align: center;
+			justify-content: center;
+			right: -12px;
+			&:hover{
+				background: rgba(201, 132, 255, 0.85);
+			}
+			&:before{
+				display: none;
+			}
+		}
+		.slick-prev {
+			width: 60px;
+			height: 60px;
+			background: rgba(201, 132, 255, 0.5);
+			border-radius: 40px;
+			display: flex!important;
+			text-align: center;
+			justify-content: center;
+			z-index: 3;
+			left: -12px;
+			&:hover{
+				background: rgba(201, 132, 255, 0.85);
+			}
+			&:before{
+				display: none;
+			}
+		}
+	}
+}

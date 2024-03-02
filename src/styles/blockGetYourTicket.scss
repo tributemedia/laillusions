@@ -1,0 +1,67 @@
+.blockGetYourTicket{
+	position: relative;
+	overflow: hidden;
+	min-height: 330px;
+	padding: 56px 0;
+	&__bg{
+		width: 100%;
+		height: 100%;
+	}
+	&__info{
+		flex-direction: column;
+		p{
+			font-weight: 700;
+			font-size: 62px;
+			line-height: 115%;
+			text-transform: uppercase;
+			padding-bottom: 30px;
+		}
+	}
+	.buttonYellow{
+		font-size: 26px;
+		height: 90px;
+		max-width: 360px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.blockGetYourTicket {
+		min-height: 290px;
+		&__info {
+			p {
+				font-size: 44px;
+				line-height: 125%;
+				padding-bottom: 30px;
+			}
+		}
+		
+		.buttonYellow {
+			font-size: 18px;
+			height: 60px;
+			max-width: 222px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.blockGetYourTicket {
+		&__info {
+			p {
+				font-size: 40px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.blockGetYourTicket {
+		&__info {
+			p {
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+<div class="booked-form booked-scrollable">
+
+
+
+  <div class="condition-block customer_choice default" id="condition-new">
+    <form action="" method="post" id="newAppointmentForm">
+      <input type="hidden" name="customer_type" value="guest" />
+      <input type="hidden" name="action" value="booked_add_appt" />
+
+
+      <p>Please confirm that you would like to request the following appointment:</p>
+      <div class="bookings">
+
+        <input type="hidden" name="calendar_id" value="60" />
+
+        <div class="booked-appointments">
+          <div class="booked-appointment-details" data-appt-key="0"><p class="calendar-name">General Admission</p><p class="appointment-info"><i class="booked-icon booked-icon-calendar"></i>&nbsp;&nbsp;&nbsp;August 7, 2023 at 12:00 pm &ndash; 1:00 pm</p><input type="hidden" name="appoinment[]" value="0" />
+            <input type="hidden" name="appoinment_index[]" value="0" />
+            <input type="hidden" name="calendar_id[]" value="60" />
+            <input type="hidden" name="title[]" value="" />
+            <input type="hidden" name="date[]" value="2023-08-7" />
+            <input type="hidden" name="timestamp[]" value="1691409600" />
+            <input type="hidden" name="eventtime[]" value="2023-08-07 @ 12:00pm - 1:00pm" />
+            <input type="hidden" name="timeslot[]" value="1200-1300" />
+
+          </div>
+        </div>
+        <div class="field">
+          <label class="field-label">Your Information:<i class="required-asterisk booked-icon booked-icon-required"></i></label>
+          <p class="field-small-p">Please enter your first name, last name and email address:</p>
+        </div>
+
+        <div class="field">
+          <input value="" placeholder="First Name..." type="text" class="textfield" name="guest_name" />
+          <input value="" placeholder="Last Name..." type="text" class="textfield" name="guest_surname" />
+        </div>
+
+        <div class="field">
+          <input value="" placeholder="Email Address..." type="email" class="large textfield" name="guest_email" />
+        </div>
+        <div class="booked-calendar-fields">
+        </div></div>
+
+      <div class="field">
+        <p class="status"></p>
+      </div>
+
+      <div class="field">
+        <input type="submit" id="submit-request-appointment" class="button button-primary" value="Book Appointment">
+        <button class="cancel button">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+<p class="booked-title-bar"><small>Book an Appointment</small></p>
+
+<a href="#" class="close"><i class="booked-icon booked-icon-close"></i></a>

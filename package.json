@@ -1,0 +1,49 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@hookform/resolvers": "^3.1.1",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "crypto": "^1.0.1",
+    "date-fns": "^2.30.0",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
+    "html-react-parser": "^4.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "next": "13.4.3",
+    "next-sitemap": "^4.2.3",
+    "numeral": "^2.0.6",
+    "postcss": "8.4.23",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-calendar": "^4.3.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.0",
+    "react-iframe": "^1.8.5",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-notifications": "^1.7.4",
+    "react-slick": "^0.29.0",
+    "react-square-web-payments-sdk": "^3.2.1",
+    "slick-carousel": "^1.8.1",
+    "square": "^23.0.0",
+    "tailwindcss": "3.3.2",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/woocommerce__woocommerce-rest-api": "^1.0.2",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "sass": "^1.62.1"
+  }
+}

@@ -1,0 +1,317 @@
+.blockCheckout {
+	padding-bottom: 100px;
+	.w50{
+		width: 49%;
+	}
+	&__top {
+		background: linear-gradient(93.78deg, #4D009A 3.68%, #8201B6 98.45%);
+		padding: 150px 0 55px;
+		&_title{
+			font-weight: 700;
+			font-size: 58px;
+			line-height: 110%;
+			text-align: center;
+			letter-spacing: 0.02em;
+			text-transform: capitalize;
+			color: #FFFFFF;
+			padding-bottom: 20px;
+		}
+		&_coupon{
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 150%;
+			text-align: center;
+			letter-spacing: 0.02em;
+			text-transform: capitalize;
+			color: #FFFFFF;
+			a{
+				text-decoration: underline;
+				&:hover{
+					cursor: pointer;
+					color: #FFD914;
+				}
+			}
+		}
+	}
+	
+	.checkout{
+		padding: 60px 0 70px;
+		flex-wrap: wrap;
+		&__title{
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 100%;
+			letter-spacing: 0.02em;
+			color: #1E1738;
+			padding-bottom: 18px;
+			padding-top: 18px;
+		}
+		&__titleSmall{
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 100%;
+			letter-spacing: 0.02em;
+			color: #1E1738;
+			padding-bottom: 12px;
+		}
+		.product__price{
+			&_coupon{
+				position: relative;
+				max-width: 250px;
+				overflow: hidden;
+				text-wrap: nowrap;
+				text-overflow: ellipsis;
+				padding-right: 20px;
+				padding-bottom: 10px;
+			}
+			
+		}
+		&__order{
+			&_items{
+				
+			}
+			&_product{
+				
+			}
+		}
+	}
+	.bookedForm{
+		margin-top: 1em;
+		padding: 1em;
+		border: 1px solid #e5e7eb;
+		border-radius: 10px;
+		position: relative;
+		.booked-form{
+			form{
+				&>p{
+					font-size: 0.8rem;
+					line-height: 1.2rem;
+					padding-bottom: 8px;
+				}
+				.bookings{
+					.booked-appointments{
+						.booked-appointment-details{
+							.calendar-name{
+								font-weight: 700;
+								font-size: 16px;
+								line-height: 100%;
+								letter-spacing: 0.02em;
+								color: #1E1738;
+								padding-bottom: 12px;
+							}
+							.appointment-info{
+								.booked-icon{
+									display: none;
+								}
+								font-weight: 700;
+								letter-spacing: 0.05em;
+								font-size: 16px;
+								line-height: 100%;
+								color: #8a18ab;
+								padding-bottom: 8px;
+							}
+						}
+					}
+					.field{
+						gap: 12px;
+						.field-label{
+							font-weight: 700;
+							font-size: 16px;
+							line-height: 100%;
+							letter-spacing: 0.02em;
+							color: #1E1738;
+							padding-bottom: 12px;
+							.booked-icon{
+								display: none;
+							}
+						}
+						.field-small-p{
+							font-size: 0.8rem;
+							line-height: 1.2rem;
+							padding-bottom: 8px;
+						}
+						.textfield{
+							padding: 0.375rem 0.475rem;
+							font-size: 0.875rem;
+							line-height: 1.5rem;
+							border-radius: 0.375rem;
+							box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+							border: 1px solid #e5e7eb;
+							width: 100%;
+							margin-bottom: 12px;
+						}
+						
+					}
+				}
+				.button-primary{
+					height: 44px;
+					padding: 8px 25px;
+					font-size: 16px;
+					border-radius: 40px;
+					font-weight: 700;
+					line-height: 22px;
+					letter-spacing: 0.02em;
+					color: #fff;
+					display: inline-block;
+					align-items: center;
+					justify-content: center;
+					background: #8A18AB;
+					margin-right: 1em;
+					&:hover{
+						background: #771591;
+						cursor: pointer;
+					}
+				}
+				.button.cancel{
+					height: 44px;
+					padding: 8px 25px;
+					font-size: 16px;
+					border-radius: 40px;
+					font-weight: 700;
+					line-height: 22px;
+					letter-spacing: 0.02em;
+					color: #fff;
+					display: inline-block;
+					align-items: center;
+					justify-content: center;
+					background: #8A18AB;
+
+					&:hover{
+						background: #771591;
+					}
+				}
+			}
+		}
+		.booked-title-bar,.close{
+			display: none;
+		}
+		&.error {
+			border: 1px solid red;
+			background: #ff000024;
+		}
+	}
+}
+
+.modalCoupon{
+	max-width: 500px;
+	width: 100%;
+	position: relative;
+	
+	&>form{
+		max-width: 500px;
+		width: 100%;
+	}
+	&>div{
+		max-width: 500px;
+		width: 100%;
+	}
+	&__form{
+		width: 100%;
+		padding-bottom: 10px;
+		input{
+			color: #1E1738;
+			border: 1px solid #4D009A;
+			outline: none;
+			border-radius: 50px;
+		}
+		.buttonPurple {
+			height: 38px;
+			border-radius: 40px;
+			padding: 10px 17px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 22px;
+			letter-spacing: 0.02em;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.blockCheckout {
+		.w50{
+			width: 100%;
+		}
+		.checkout{
+			.product__price{
+				&_coupon{
+					max-width: 180px;
+				}
+				
+			}
+		}
+		&__top {
+			&_title{
+				font-size: 40px;
+				padding-bottom: 20px;
+			}
+			&_coupon{
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 150%;
+				text-align: center;
+				letter-spacing: 0.02em;
+				text-transform: capitalize;
+				color: #FFFFFF;
+				a{
+					text-decoration: underline;
+					display: block;
+					&:hover{
+						color: #FFD914;
+					}
+				}
+			}
+		}
+		
+		.checkout{
+			padding: 40px 0 0;
+			&__title{
+				font-size: 22px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.modalCoupon{
+		&__form {
+			padding-top: 15px;
+			&_elements {
+				flex-direction: column;
+				align-items: center;
+				gap: 15px;
+			}
+			&_input{
+				width: 100%;
+			}
+		}
+	}
+	.blockCheckout {
+		padding-bottom: 50px;
+		&__top{
+			padding: 90px 10px 25px;
+		}
+		
+		.checkout{
+			
+			flex-wrap: wrap;
+			.product__price{
+				&_coupon{
+					
+					max-width: 120px;
+					font-size: 12px;
+				}
+				
+			}
+			&__order{
+				&_items{
+					flex-wrap: wrap;
+					padding: 20px;
+				}
+				&_product{
+					
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,148 @@
+.blockPromotions{
+	padding: 100px 0;
+	&__content{
+		height: 608px;
+	}
+	&_duet{
+		width: 48.5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.blockPromotions__item{
+			width: 100%;
+			height: 47%;
+		}
+	}
+	&__item{
+		width: 48.5%;
+		height: 100%;
+		display: flex;
+		border-radius: 40px;
+		overflow: hidden;
+		position: relative;
+		&:hover{
+			.blockPromotions__item_info {
+				span{
+					color: #8A18AB;
+					z-index: 8;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					left: calc(50% - 135px);
+					top: calc(50% - 95px);
+					transform: rotate(-45deg);
+					background: #FFFFFF;
+					opacity: 0.55;
+					width: 270px;
+					height: 190px;
+					z-index: 7;
+					border-radius: 50%;
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					left: calc(50% - 135px);
+					top: calc(50% - 95px);
+					background: #FFFFFF;
+					opacity: 0.55;
+					width: 270px;
+					height: 190px;
+					z-index: 7;
+					border-radius: 50%;
+				}
+			}
+			.blockPromotions__imgHover {
+				opacity: 1;
+			}
+		}
+		&_info{
+			padding: 40px 65px;
+			width: 100%;
+			height: 100%;
+			z-index: 9;
+			text-align: center;
+			span{
+				max-width: 185px;
+				font-weight: 700;
+				font-size: 26px;
+				line-height: 110%;
+				letter-spacing: 0.02em;
+				text-transform: uppercase;
+				color: #FFFFFF;
+			}
+		}
+	}
+	&__imgHover{
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.blockPromotions{
+		padding: 55px 0;
+		&__content{
+			height: 500px;
+		}
+		&__item{
+			width: 48.5%;
+			height: 100%;
+			display: flex;
+			border-radius: 40px;
+			overflow: hidden;
+			position: relative;
+			&:hover{
+				.blockPromotions__item_info {
+					&:after{
+						left: calc(50% - 115px);
+						top: calc(50% - 75px);
+						width: 230px;
+						height: 150px;
+					}
+					&:before{
+						left: calc(50% - 115px);
+						top: calc(50% - 75px);
+						width: 230px;
+						height: 150px;
+					}
+				}
+			}
+			&_info{
+				span{
+					max-width: 150px;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.blockPromotions{
+		padding: 55px 0;
+		&__content{
+			height: auto;
+		}
+		&_duet{
+			width: 100%;
+			padding-bottom: 15px;
+			gap: 15px;
+			.blockPromotions__item{
+				width: 100%;
+				height: 195px;
+			}
+		}
+		&__item{
+			width: 100%;
+			height: 195px;
+			&_info{
+				padding: 40px;
+				text-align: center;
+				span{
+					max-width: 150px;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
